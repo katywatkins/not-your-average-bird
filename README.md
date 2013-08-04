@@ -7,6 +7,7 @@ The whole point of this is for me to force myself to learn, so any helpful sugge
 
 ## Current Status: 
 * not looking at much beyond mobile/small screen view yet.
+* trying to make this function without Javascript (and hopefully figuring out branching in the process)
 
 
 ## I’m doing this to:
