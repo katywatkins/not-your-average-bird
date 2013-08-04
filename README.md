@@ -6,7 +6,8 @@ The whole point of this is for me to force myself to learn, so any helpful sugge
 
 
 ## Current Status: 
-* not looking at much beyond mobile/small screen view yet.
+* not looking at anything beyond a mobile/small screen view yet
+* backtracking and removing all javascript because I forgot about progressive enhancement (fail!), and trying to figure out how branches work in the process
 
 
 ## I’m doing this to:
