@@ -4,10 +4,9 @@ A quick little one-page website (about penguins) that's forcing me to do stuff a
 
 The whole point of this is for me to force myself to learn, so any helpful suggestions and/or critique regarding the design, code, or my use of GitHub are appreciated. Tell me what I should be doing better! 
 
-
 ## Current Status: 
-* not looking at anything beyond a mobile/small screen view yet
-* backtracking and removing all javascript because I forgot about progressive enhancement (fail!), and trying to figure out how branches work in the process
+* not looking at much beyond mobile/small screen view yet.
+* trying to make this function without Javascript (and hopefully figuring out branching in the process)
 
 
 ## I’m doing this to:
