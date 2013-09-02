@@ -16,7 +16,7 @@ body {
 
 #site {
 	font-size: 1.8em; /* 18 / 10 */
-	font-family: "proxima-nova"; 
+	font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif; 
 /*	background: rgba(203,217,88, .9);*/ /* lime green */ 
 	padding: 0em 1em 1em 1em;
 	max-width: 30em;
@@ -33,30 +33,6 @@ section {
 	display:none;
 	border-bottom: 1px solid rgba(170, 189, 14, .2); /* darker green */
 }
-
-h1 {
-	font-size:1.666666666666667em; /* 30 / 18 */
-	font-weight: 700;
-	font-family: "omnes-pro", sans-serif;
-	color: rgb(0, 166, 198); /* teal */
-	line-height: 1.2em;  
-}
-
-
-.title {
-	display:block;
-	text-transform: uppercase;
-	color: rgb(203,217,88); /* lime green */
-	transform: rotate(355deg);
-    -webkit-transform: rotate(355deg) ;
-    -moz-transform: rotate(355deg) ;
-    -o-transform: rotate(355deg) ;
-    -ms-transform: rotate(355deg) ;
-   	width:30px;  /* If not defined, or set to 100%, space below shrinks as viewport gets wider */
-    padding-bottom: .2em;   /* Switch back to ems some day?? Spacing kept getting smaller as screen got wider. .5ems at mobile view */
-/*    text-shadow: 1px 1px 1px rgba(170, 189, 14, 0.9); */
-}  
-/*http://stackoverflow.com/questions/9215733/css-padding-and-margin-issue*/
 
 
 
@@ -126,6 +102,29 @@ p {
 
 /* http://stackoverflow.com/questions/5358183/is-it-possible-to-dynamically-scale-text-size-based-on-browser-width */
 
+h1 {
+	font-size:1.666666666666667em; /* 30 / 18 */
+	font-weight: 700;
+	color: rgb(0, 166, 198); /* teal */
+	line-height: 1.2em;  
+	font-family: "omnes-pro", "Arial Rounded MT Bold", Arial, sans-serif;
+}
+
+
+.title {
+	display:block;
+	text-transform: uppercase;
+	color: rgb(203,217,88); /* lime green */
+	transform: rotate(355deg);
+    -webkit-transform: rotate(355deg) ;
+    -moz-transform: rotate(355deg) ;
+    -o-transform: rotate(355deg) ;
+    -ms-transform: rotate(355deg) ;
+   	width:30px;  /* If not defined, or set to 100%, space below shrinks as viewport gets wider */
+    padding-top: .5em;   
+    /*    text-shadow: 1px 1px 1px rgba(170, 189, 14, 0.9); */
+}  
+/*http://stackoverflow.com/questions/9215733/css-padding-and-margin-issue*/
  
 #main-title {
 	background: rgba(203,217,88, .7);
@@ -133,6 +132,7 @@ p {
 	margin: 0 -1em -1em -1em;
 	padding: 2em 1em;
 	box-shadow: 0px 2px 2px rgba(170, 189, 14, 0.9);
+
 
 }
 
@@ -146,6 +146,13 @@ p {
 	text-align: center;
 	display:block;
 	width:100%;
+	font-family: "proxima-nova-extra-condensed", "Helvetica Neue", Helvetica, Arial, sans-serf;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px rgba(170, 189, 14, 0.8); 
+
+	/* grabs Helventica Neue Condensed Bold in Firefox on Mac at least*/
+	font-weight:600; 
+	font-stretch:condensed;
 	}
 
 #main-title p {
@@ -154,19 +161,11 @@ p {
 }
 
 #lil-title {	/* "Penguins Are" */
-	text-transform: uppercase;
-	font-family: "proxima-nova-extra-condensed", sans-serf;
 	font-size: 1em;  /*1em*/
-	text-shadow: 1px 1px 1px rgba(170, 189, 14, 0.8); 
-
 }
 
 #big-title {	/* "Awesome." */
-	text-transform: uppercase;
-	font-family: "proxima-nova-extra-condensed", sans-serf;
-	font-size: 1.7em;   /*1.7*/
-	text-shadow: 1px 2px 2px rgba(170, 189, 14, 0.9); 
-
+		font-size: 1.7em;   /*1.7*/
 }
 
 

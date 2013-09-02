@@ -10,6 +10,8 @@ The whole point of this is for me to force myself to learn, so any helpful sugge
 * backtracking and removing all javascript because I forgot about progressive enhancement (fail!), and trying to figure out how branches work in the process
 
 
+
+
 ## I’m doing this to:
 1. Practice writing concise content for the web.
 2. Experiment with designing in the browser.
