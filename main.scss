@@ -1,10 +1,6 @@
 
-/* ------- BASIC STRUCTURE  -------- */
 
-* {
-    margin: 0;    /* fixes jerk in animation  */
-    padding: 0;
-}
+/* ------- BASIC STRUCTURE  -------- */
 
 body {
 	font-size:62.5%;
@@ -13,6 +9,10 @@ body {
 	/*background-image: url(Untitled-1.png);*/
 }
 
+/* * {
+    margin: 0;    /* fixes jerk in animation 
+    padding: 0;
+} */
 
 #site {
 	font-size: 1.8em; /* 18 / 10 */
@@ -20,56 +20,36 @@ body {
 /*	background: rgba(203,217,88, .9);*/ /* lime green */ 
 	padding: 0em 1em 1em 1em;
 	max-width: 30em;
-	background-color:white;
+	background-color:$background-color;
 
 	}
 
 section {
 /*	border-bottom: 1px solid rgb(170, 189, 14); */
-	margin: 1em 0;
+	margin: 0 0 1em;
 }
 
 .hide {
-	display:none;
+	/* display:none; */
 	border-bottom: 1px solid rgba(170, 189, 14, .2); /* darker green */
 }
 
 
 
-aside {
-	/*background: rgba(203,217,88, .7); /* lime green */ 
-	padding: 0 1em .3em 1em;
-	margin: .5em -1em;
-	color: rgb(67, 75, .1); /* almost-black green*/
-	
-}
-
-
-aside h1 {
-	color: rgb(170, 189, 14); /* darker green */
-	/*border-bottom: 1px solid rgb(170, 189, 14); /* darker green */
-	font-weight: normal;
-	line-height: 1em;
-	font-size: 1em; /* 18 / 30 */
-	padding: .5em 0;
-} 
-
-aside h1 a:visited {
-	color: rgb(170, 189, 14); /* darker green */
-}
 
 a {
-		text-decoration: none;
+		text-decoration: underline;
 		color:rgb(0, 166, 198);
 }
 
 a:hover {
 	text-decoration: underline;
+	color: $link-color-hover;
 
 }
 
 a:visited {
-	color: rgb(19, 145, 169);
+	color: $link-color-visited;
 }
 
 li {
@@ -81,16 +61,7 @@ li {
 	text-decoration: line-through;
 }
 
-footer p{
-	font-size: .666666666666667em; /* 12 / 18 */
-}
 
-footer {
-	margin-top:2.2em;
-	padding-top: .6em;
-	border-top: 1px solid rgba(170, 189, 14, .3);
-	text-align: center;
-}
 
 /* ------- CONTENT RELATED -------*/
 
@@ -98,71 +69,6 @@ footer {
 p {
 	margin: .5em 0;
 }
-
-
-/* http://stackoverflow.com/questions/5358183/is-it-possible-to-dynamically-scale-text-size-based-on-browser-width */
-
-h1 {
-	font-size:1.666666666666667em; /* 30 / 18 */
-	font-weight: 700;
-	color: rgb(0, 166, 198); /* teal */
-	line-height: 1.2em;  
-	font-family: "omnes-pro", "Arial Rounded MT Bold", Arial, sans-serif;
-}
-
-
-.title {
-	display:block;
-	text-transform: uppercase;
-	color: rgb(203,217,88); /* lime green */
-   	width:30px;  /* If not defined, or set to 100%, space below shrinks as viewport gets wider */
-    padding-top: .5em;   
-    /*    text-shadow: 1px 1px 1px rgba(170, 189, 14, 0.9); */
-}  
-/*http://stackoverflow.com/questions/9215733/css-padding-and-margin-issue*/
- 
-#main-title {
-	background: rgba(203,217,88, .7);
-	/*border-bottom: 3px solid rgba(170, 189, 14, .3);*/
-	margin: 0 -1em -1em -1em;
-	padding: 2em 1em;
-	box-shadow: 0px 2px 2px rgba(170, 189, 14, 0.9);
-
-
-}
-
-#main-title .title {
-	color: rgb(170, 189, 14);
-
-}
-
-#main-title h1 { 
-	font-size: 2.666666666666667em; /* FIX */
-	text-align: center;
-	display:block;
-	width:100%;
-	font-family: "proxima-nova-extra-condensed", "Helvetica Neue", Helvetica, Arial, sans-serf;
-	text-transform: uppercase;
-	text-shadow: 1px 1px 1px rgba(170, 189, 14, 0.8); 
-
-	/* grabs Helventica Neue Condensed Bold in Firefox on Mac at least*/
-	font-weight:600; 
-	font-stretch:condensed;
-	}
-
-#main-title p {
-	font-size: 1.555555555556em;  /*28 / 18 */
-	text-align: center;
-}
-
-#lil-title {	/* "Penguins Are" */
-	font-size: 1em;  /*1em*/
-}
-
-#big-title {	/* "Awesome." */
-		font-size: 1.7em;   /*1.7*/
-}
-
 
 
 

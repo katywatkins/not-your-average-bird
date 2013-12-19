@@ -1,0 +1,34 @@
+
+aside {
+	/*background: rgba(203,217,88, .7); /* lime green */ 
+	padding: 0 1em .3em 1em;
+	margin: .5em -1em;
+	color: white;
+	background-color: lighten($base-color, 3) ;
+
+}
+
+
+aside h1 {
+	color: rgb(170, 189, 14); /* darker green */
+	/*border-bottom: 1px solid rgb(170, 189, 14); /* darker green */
+	font-weight: normal;
+	line-height: 1em;
+	font-size: 1em; /* 18 / 30 */
+	padding: .5em 0;
+	
+} 
+aside a {
+	color: $link-color-aside;
+}
+
+aside a:visited {
+	color: $link-color-aside-visited;
+}
+
+aside a:hover {
+	color: $link-color-aside-hover;
+}
+
+
+/* TRYING TO REMOVE SPACE ON NUMBER TITLES */
