@@ -1,0 +1,26 @@
+.title {
+	display:block;
+	text-transform: uppercase;
+}  
+
+#main-title {
+	opacity: 1;
+}
+
+#main-title h1{
+/* 	padding-top:10em; */
+	text-transform: uppercase;
+	line-height: 1.5em;
+	background:none !important;
+}
+
+#lil-title {
+	font-size: 1.25em;  /* 36 / 32 */
+	background:none !important;
+}
+
+#big-title{
+	font-size: 2.1875em; /* 70 / 32 */
+	opacity: 1;
+
+}
