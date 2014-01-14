@@ -2,30 +2,45 @@ html, body, #site {
 	/* min-width:10em; */
 	height:100%;
 	margin:0;
-/* 	background-color: rgba(192, 233, 240, .6); */
-	/*background-image: url(Untitled-1.png);*/
+	font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 100%;
+	background-image: url("/i/bg-2-2.png");
+	background-repeat: repeat;
+	background-attachment: fixed;
+
 }
 
 
 h1 {
-	font-size:2em; /* 60 / 18 */ /* FIX THIS */
+	font-family: "proxima-nova-extra-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:2em; /* 32 / 16 */ 
 	font-weight: 700;
-	color: $alt-color;
-	font-family: "proxima-nova-extra-condensed", "Helvetica Neue", Helvetica, Arial, sans-serf;
+	color: $alt-color ;
 	/* grabs Helventica Neue Condensed Bold in Firefox on Mac at least*/
-	font-weight:600; 
 	font-stretch:condensed;
+
 }
 
 section {
-min-height:100%;
-position:relative;
-background: $base-color;
-padding:1.5em;
+	min-height:100%;
+	position:relative;
+	background: $base-color;
+	padding:1.5em;
+	opacity: .8;
 }
 
-p, ul, ol {
+#site :nth-of-type(even) {
+	background: darken($base-color, 10);
+}
+
+p, ul, ol, hr, pre, dl, a {
 	color: #fff;
+	font-size: 1.25em; /* 20 / 16 */
+	background:none !important;
+	}
+
+#site h1, h2, h3 {
+	background:none !important;
 }
 
 ul {
@@ -50,6 +65,9 @@ a:hover {
 	color: $link-color-hover;
 }
 
+.strike {
+	text-decoration: line-through;
+}
 
 /* *************** ASIDES ************** */
 
@@ -57,7 +75,7 @@ a:hover {
 aside {
 /* background: $alt-color;
 text-align:right; */
-
+	display:none;
 }
 
 aside h1 {
