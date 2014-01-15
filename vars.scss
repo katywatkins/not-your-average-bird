@@ -8,7 +8,7 @@ $alt-color: $green;
 $background-color: #FFF;
 
 $link-color: lighten($alt-color, 15);
-$link-color-visited: lighten($base-color, 55);  /* rgb(19, 145, 169); */
+$link-color-visited: lighten($base-color, 50);  /* rgb(19, 145, 169); */
 $link-color-hover: $alt-color;
 /* $link-color-aside: darken($base-color, 20);
 $link-color-aside-hover: $alt-color;
