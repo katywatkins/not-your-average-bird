@@ -13,5 +13,6 @@ The whole point of this is for me to force myself to learn, so any helpful sugge
 2. Experiment with designing in the browser. 
 3. Develop mobile-first.
 4. Expand knowledge of HTML, CSS, & Javascript (and shamelessly play with new CSS3 properties).
-5. Experiment with responsive design 
+5. Experiment with responsive design.
 6. Use Git & GitHub to push myself out of my comfort zone and perfect my code and animations.
+7. Slowly start using Sass.
