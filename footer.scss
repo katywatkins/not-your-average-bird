@@ -1,11 +1,10 @@
 footer p{
-	font-size: .666666666666667em; /* 12 / 18 */
-	color: $base-color;
+	font-size: .8em; /* 16 / 20 */
 }
 
 footer {
-	margin-top:2.2em;
-	padding-top: .6em;
+	padding: 1em;
 	border-top: 1px solid rgba(170, 189, 14, .3);
 	text-align: center;
+	background: darken($base-color, 4);
 }
