@@ -5,7 +5,8 @@ A quick little one-page website (about penguins) that's forcing me to do stuff a
 The whole point of this is for me to force myself to learn, so any helpful suggestions and/or critique regarding the design, code, or my use of GitHub are appreciated. Tell me what I should be doing better! 
 
 ## Current Status: 
-* not looking at much beyond mobile/small screen view yet.
+* ~~not looking at much beyond mobile/small screen view yet.~~
+* tiptoeing beyond ~300px wide
 
 ## I’m doing this to:
 1. Practice writing concise content for the web.
