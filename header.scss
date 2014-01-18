@@ -31,7 +31,19 @@
 
 }
 
+@media screen and (max-height:320px) {
+	#main-title {
+		padding-top: 1em !important;
+	}
 
+	#main-title h1{
+	padding-top:.5em !important;
+	}
+}
+
+@media screen and (min-width:331px) {
+
+}
 
 
 @media screen and (min-width:331px) {
@@ -59,7 +71,7 @@
 		font-size: 3.1875em;
 	}
 
-	#main-title p {
+	#main-title p { 
 		border-right: 1px solid $alt-color;
 		padding-right: 2em;
 		line-height: 2em;

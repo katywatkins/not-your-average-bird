@@ -1,4 +1,4 @@
-/* Is there a way to say, if Typekit fonts don't load, don't do the anti-aliasing thing in Chrome? */
+/* Is there a way to say: if Typekit fonts don't load, don't do the anti-aliasing thing in Chrome? */
 
 
 
@@ -25,7 +25,17 @@ h1 {
 	color: $alt-color ;
 	/* grabs Helventica Neue Condensed Bold in Firefox on Mac at least*/
 	font-stretch:condensed;
+	line-height:1.1em;
+	text-shadow:  1px 1px 1px darken($alt-color, 35);
 
+}
+
+.title {
+	display:block;
+	text-transform: uppercase;
+	color: darken($base-color, 20);
+	font-size: .8em;
+	text-shadow: none;
 }
 
 section {
@@ -90,5 +100,33 @@ text-align:right; */
 
 aside h1 {
 	font-size: 1.2em;
+}
+
+
+
+@media screen and (min-width:331px) and (min-height:331px){
+
+	section {
+		padding-left:4em;
+
+	}
+
+	h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
+	/* 	max-width: 70%; */  /* ems didn't line up equally for h1 & p */
+	}
+
+	#site {
+	/* 	font-size: .8em; */
+	}
+
+}
+
+
+@media screen and (min-width:950px) {
+
+		h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
+/* 		max-width: 50%;
+ */
+}
 }
 
