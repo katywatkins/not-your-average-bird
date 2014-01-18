@@ -1,26 +1,80 @@
-.title {
+#main-title .title {
 	display:block;
 	text-transform: uppercase;
-}  
+	color: darken($base-color, 20);
+	font-size: 2em;
+	 text-shadow:  1px 1px 1px darken($base-color, 70);
+   /*      color: #9c8468;
+        opacity: 0.5; */
+    padding-top:none;
+   }
 
 #main-title {
 	opacity: 1;
 }
 
 #main-title h1{
-/* 	padding-top:10em; */
+	padding-top:1.5em;
 	text-transform: uppercase;
 	line-height: 1.5em;
-	background:none !important;
-}
+	background:none;
+	}
 
 #lil-title {
 	font-size: 1.25em;  /* 36 / 32 */
-	background:none !important;
+	background:none;
 }
 
 #big-title{
 	font-size: 2.1875em; /* 70 / 32 */
 	opacity: 1;
+
+}
+
+
+
+
+@media screen and (min-width:331px) {
+
+	
+
+	#main-title {
+		padding-top: 8em;
+		margin:0;
+	}
+
+	#main-title h1 {
+		line-height: 1.9em;
+		border-left: 1px solid $alt-color;
+		padding-left:1em;
+		margin:0;
+		padding-top: .8em;
+	}
+
+	#lil-title {
+		font-size: 1.75em;
+	}
+
+	#big-title {
+		font-size: 3.1875em;
+	}
+
+	#main-title p {
+		border-right: 1px solid $alt-color;
+		padding-right: 2em;
+		line-height: 2em;
+		margin:0;
+		text-align:right;
+	}
+
+	#main-title p:first-of-type {
+		padding-top:1em;
+		margin-top: 8em;
+		}
+
+	#main-title p:last-of-type {
+		padding-bottom:1em;
+		margin-bottom:2em;
+	}
 
 }
