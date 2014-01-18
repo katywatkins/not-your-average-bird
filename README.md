@@ -7,6 +7,7 @@ The whole point of this is for me to force myself to learn, so any helpful sugge
 ## Current Status: 
 * ~~not looking at much beyond mobile/small screen view yet.~~
 * tiptoeing beyond ~300px wide
+* distantly horrified at my commits after watching a talk on how to fix them before pushing to GitHub, but haven't gotten around to figuring out exactly how to do that yet. If anyone tries to go through them, I am so, so sorry.
 
 ## I’m doing this to:
 1. Practice writing concise content for the web.
