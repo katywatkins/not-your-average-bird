@@ -1,8 +1,6 @@
 /* Is there a way to say: if Typekit fonts don't load, don't do the anti-aliasing thing in Chrome? */
 
 
-
-
 html, body, #site {
 	/* min-width:10em; */
 	height:100%;
@@ -55,7 +53,7 @@ p, ul, ol, hr, pre, dl {
 		color: #fff;
 		}
 
-p, ul, ol, hr, pre, dl,a {
+p, ul, ol, hr, pre, dl, a, li {
 	background:none !important;     /* fixes random background changes from nth-of-type above */
 }
 
@@ -107,20 +105,32 @@ aside h1 {
 @media screen and (min-width:331px) and (min-height:331px){
 
 	section {
-		padding-left:4em;
+		padding-left:3em;
 
 	}
 
 	h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
-	/* 	max-width: 70%; */  /* ems didn't line up equally for h1 & p */
+		max-width: 70%;
 	}
 
-	#site {
-	/* 	font-size: .8em; */
+	
+	aside {
+		text-align:right;
+		display:block;
+		max-width: 35em;
+		padding: 2em;
+		font-size:.8em;
+		float:left !important;
+		position:absolute;
+		bottom:10em;
+		right: 3em;
+		clear:both;
 	}
 
+	aside p, h1, ul, ol {
+		max-width: 100%;
+	}
 }
-
 
 @media screen and (min-width:950px) {
 

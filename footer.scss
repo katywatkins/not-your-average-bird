@@ -1,10 +1,11 @@
-footer p{
-	font-size: .8em; /* 16 / 20 */
-}
-
 footer {
 	padding: 1em;
 	border-top: 1px solid rgba(170, 189, 14, .3);
 	text-align: center;
 	background: darken($base-color, 4);
+}
+
+footer p{
+	font-size: .8em; /* 16 / 20 */
+	max-width: 100%;
 }

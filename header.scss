@@ -41,10 +41,6 @@
 	}
 }
 
-@media screen and (min-width:331px) {
-
-}
-
 
 @media screen and (min-width:331px) {
 
@@ -53,7 +49,8 @@
 	#main-title {
 		padding-top: 8em;
 		margin:0;
-	}
+		padding-right:3em;
+		}
 
 	#main-title h1 {
 		line-height: 1.9em;
@@ -77,6 +74,7 @@
 		line-height: 2em;
 		margin:0;
 		text-align:right;
+		max-width: 100%;
 	}
 
 	#main-title p:first-of-type {
