@@ -25,6 +25,7 @@
 		</section> <!-- /end #main-title -->
 
 
+
 	   	<section>
 			<header>
 				<h1><span class="title">First:</span> <span class="subtitle">They’re deceptive little <!-- motherfuckers --> buggers.</span></h1>
@@ -38,7 +39,7 @@
 
 			<aside>
 				<header>
-					<h1><a href="#" id="toggle1">Bullshit. Prove it.</a></h1>
+					<h1>Bullshit. Prove it.</h1>
 				</header>
 
 				<div id="first" class="hide">
@@ -64,7 +65,7 @@
 
 			<aside>
 				<header>
-					<h1><a href="#" id="toggle2">Drop some science on me.</a></h1>
+					<h1>Drop some science on me.</h1>
 				</header>
 
 				<div id="second" class="hide">
@@ -93,7 +94,7 @@
 
 				<aside>
 					<header>
-						<h1><a href="#" id="toggle4">Oh just tell me more already.</a></h1>
+						<h1>Oh just tell me more already.</h1>
 					</header>
 
 					<div class="hide" id="third">
@@ -116,7 +117,7 @@
 
 			<aside>
 				<header>
-					<h1><a href="#" id="toggle7">I'm sorry, <em>what?</em></a></h1>
+					<h1>I'm sorry, <em>what?</em></h1>
 				</header>
 
 				<div class="hide" id="fourth">
@@ -144,7 +145,7 @@
 				<p>Antarctic penguins are equipped with exactly what they need to survive: Plenty of fat and feathers to keep them warm (or release heat when they’re too hot. Yes, it does happen sometimes.) Their circulatory system also adjusts to help keep their temperature regulated.</p>
 
 				<aside>
-					<header><h1><a href="#" id="toggle9">Tell me more.</a></h1></header>
+					<header><h1>Tell me more.</a></header>
 
 					<div class="hide" id="fifth">
 						<ul>
@@ -166,7 +167,7 @@
 			<p>Check out that <a href="http://commons.wikimedia.org/wiki/File:Eudyptes_chrysolophus4_(South_Georgia).jpg">sweet yellow headdress</a>. And if you think that’s crazy looking, check out <a href="http://gifts.worldwildlife.org/gift-center/Images/large-species-photo/large-Rockhopper-Penguin-photo.jpg">this guy</a>.</p>
 
 			<aside>
-				<header><h1><a href="#" id="toggle8">MOAR SCIENCE PLZ.</a></h1></header>
+				<header><h1>MOAR SCIENCE PLZ.</a></header>
 				
 				<div class="hide" id="sixth">
 					<p>I haven’t been able to find much science at all actually. Crested penguins belong to the genus <a href="http://www.penguinworld.com/types/eudyptes.html">Eudyptes</a>. With five different crested species, it’s actually the most diverse group of penguins. The yellow feathers <a href="https://illuminatingfossils.wordpress.com/2013/05/19/an-ancient-penguin-with-yellow-feathers/"> are thought to have evolved from a long-extinct ancestor</a>.</p>
@@ -183,7 +184,7 @@
 				<p>Penguins are one of the few creatures living in Antarctica, a continent that’s 98% ice. It takes a lot to survive there. <!-- Even those who don't, like the little blue penguin, are resourceful little things.  -->
 				</p>
 			<aside>
-				<header><h1><a href="#" id="toggle10">Fascinating. I’d like some more words now.</a></h1></header>
+				<header><h1>Fascinating. I’d like some more words now.</a></header>
 
 			<div class="hide" id="seventh">
 				<ul>
@@ -215,7 +216,7 @@
 
 			<aside>
 				<header>
-					<h1><a href="#" id="toggle3">You think I’m joking?</a></h1>
+					<h1>You think I’m joking?</h1>
 				</header>
 
 				<div class="hide" id="eighth">
@@ -243,7 +244,7 @@
  
 			<aside>
 				<header>
-					<h1><a href="#" id="toggle5">I’d like some proper information please. </a></h1>
+					<h1>I’d like some proper information please.</h1>
 				</header>
  
 				<div class="hide" id="ninth">
@@ -272,7 +273,7 @@
 
 			<aside>
 				<header>
-					 <h1><a href="#" id="toggle6">I demand science.</a> </h1>
+					 <h1>I demand science.</h1>
 				</header> 
 
 				<div class="hide" id="tenth">
@@ -306,6 +307,26 @@
 			<p>This site was hand-coded by me, <a href="http://www.katywatkins.com">Katy Watkins</a>, in an attempt to get better at HTML & CSS. And maybe some Javascript. This is also my first foray into the terrifying world of GitHub. <a href="https://github.com/katywatkins/Not-Your-Average-Bird">Let me know what I can do better!</a></p>
 		</footer>
 	</div> <!-- /end #site -->
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('aside').addClass("hidden");
+
+        $('aside').click(function() {
+            var $this = $(this);
+
+            if ($this.hasClass("hidden")) {
+                $(this).removeClass("hidden").addClass("visible");
+
+            } else {
+                $(this).removeClass("visible").addClass("hidden");
+            }
+        });
+    });
+</script>
+
 </body>
 
 </html>
