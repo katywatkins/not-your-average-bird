@@ -1,20 +1,26 @@
-/*Is there a way to say: if Typekit fonts don't load, don't do the anti-aliasing thing in Chrome? */
-
-
 html, body, #site {
 	/* min-width:10em; */
 	height:100%;
 	margin:0;
 	font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 100%;
-	background-image: url("/i/bg-2-2.png");
-	background-repeat: repeat;
-	background-attachment: fixed;
 	font-weight: 100;
 	-webkit-font-smoothing:antialiased;  /* and magically, text doesn't look bold in Chrome */
+	line-height:1.8em;
+	
 
 }
+p, li {
+	margin-bottom: 1.5em;
+}
 
+body {
+		background: url("/i/bg-2-2.png") fixed repeat;
+}
+
+#main-title, #summary {
+		background: rgba($base-color, .7) ;
+}
 .hidden>div{
     display:none;
 }
@@ -46,25 +52,22 @@ section {
 	position:relative; */
 	background: $base-color;
 	padding:1.5em;
-	opacity: .8;
+	opacity: 1;
+	border-bottom: 2px solid darken($base-color, 4);
 }
 
-section :nth-of-type(even) {    /* won't work in older browsers, IE8, etc */
+/* #second, #fifth, #eighth, #summary {   
 	background: darken($base-color, 4);
 }
 
-section :nth-of-type(3n+3) {
+#third, #sixth, #ninth, footer {
 	background: darken($base-color, 15);
 }
-
+ */
 p, ul, ol, hr, pre, dl { 
 	font-size: 1.25em; /* 20 / 16 */    /* if the "a" below is incluced, links get bigger */
 		color: #fff;
 		}
-
-p, ul, ol, hr, pre, dl, a, li {
-	background:none !important;     /* fixes random background changes from nth-of-type above */
-}
 
 #site h1, h2, h3 {
 	background:none;
@@ -144,4 +147,10 @@ section {
 	background: $base-color;
 	padding:1.5em;
 	opacity: .8;
-} */
+} 
+
+
+
+
+
+ */
