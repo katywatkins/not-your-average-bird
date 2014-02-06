@@ -5,6 +5,7 @@ aside {
 	color: white;
  	font-size: .8em;
 	text-align: right;
+	float:right; 
 /*  	background: darken($base-color, 4);
  	background: rgb(135,224,253); */
 background: -moz-linear-gradient(top, darken($base-color, 4) 0%, darken($base-color, 7) 40%, darken($base-color, 10) 100%); /* FF3.6+ */
@@ -49,4 +50,17 @@ aside a:hover {
 
 
 
-/* TRYING TO REMOVE SPACE ON NUMBER TITLES */
+ @media screen and (min-width:350px) and (min-height:350px){
+
+	
+	aside {
+		max-width: 35em;
+		margin-right: 3em;
+	}
+
+	/* aside p, h1, ul, ol {
+		max-width: 100%;
+	} */
+}
+
+

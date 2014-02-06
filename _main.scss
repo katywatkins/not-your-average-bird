@@ -7,7 +7,7 @@ html, body, #site {
 	font-weight: 100;
 	-webkit-font-smoothing:antialiased;  /* and magically, text doesn't look bold in Chrome */
 	line-height:1.8em;
-	
+
 
 }
 p, li {
@@ -54,6 +54,7 @@ section {
 	padding:1.5em;
 	opacity: 1;
 	border-bottom: 2px solid darken($base-color, 4);
+	overflow:auto;
 }
 
 /* #second, #fifth, #eighth, #summary {   
@@ -100,42 +101,25 @@ a:hover {
 }
 
 
-/* @media screen and (min-width:331px) and (min-height:331px){
+@media screen and (min-width:350px) and (min-height:350px){
 
 	section {
 		padding-left:3em;
 
+	} 
+ 
+h1, h2, h3, h4, h5, h6, p, ul, ol, li, blockquote {
+		max-width: 25em;
 	}
+ 
 
-	h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
-		max-width: 70%;
-	}
 
-	
-	aside {
-		text-align:right;
-		display:block;
-		max-width: 35em;
-		padding: 2em;
-		font-size:.8em;
-		float:left !important;
-		position:absolute;
-		bottom:10em;
-		right: 3em;
-		clear:both;
-	}
-
-	aside p, h1, ul, ol {
-		max-width: 100%;
-	}
 }
- */
+
+
 @media screen and (min-width:950px) {
 
-		h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
-/* 		max-width: 50%;
- */
-}
+	
 }
 
 
