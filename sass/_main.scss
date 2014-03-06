@@ -4,22 +4,21 @@ html, body, #site {
 	margin:0;
 	font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 100%;
-	font-weight: 100;
+	font-weight: 200;
 	-webkit-font-smoothing:antialiased;  /* and magically, text doesn't look bold in Chrome */
 	line-height:1.8em;
-
-
 }
+
 p, li {
 	margin-bottom: 1.5em;
 }
 
 body {
-		background: url("/i/bg-2-2.png") fixed repeat;
+	background: url("/i/bg-2-2.png") fixed repeat;
 }
 
 #main-title, #summary {
-		background: rgba($base-color, .7) ;
+	background: rgba($base-color, .7) ;
 }
 .hidden>div{
     display:none;
@@ -37,6 +36,7 @@ h1 {
 	font-stretch:condensed;  	/* grabs Helventica Neue Condensed Bold in Firefox on Mac at least*/
 	line-height:1.1em;
 	text-shadow:  1px 1px 1px darken($alt-color, 35); 
+	display:block;
 }
 
 .title {
@@ -49,26 +49,31 @@ h1 {
 
 section {
 	/* min-height:100%;
-	position:relative; */
+	position:relative; */ 
 	background: $base-color;
 	padding:1.5em;
 	opacity: 1;
-	border-bottom: 2px solid darken($base-color, 4);
+/* 	border-bottom: 2px solid darken($base-color, 20); */
 	overflow:auto;
 }
+
 
 /* #second, #fifth, #eighth, #summary {   
 	background: darken($base-color, 4);
 }
 
 #third, #sixth, #ninth, footer {
-	background: darken($base-color, 15);
+	background: darken($base-color, 10);
+} */
+
+#first, #third, #fifth, #seventh, #ninth {
+	background: darken($base-color, 4);
 }
- */
+
 p, ul, ol, hr, pre, dl { 
 	font-size: 1.25em; /* 20 / 16 */    /* if the "a" below is incluced, links get bigger */
-		color: #fff;
-		}
+	color: #fff;
+}
 
 #site h1, h2, h3 {
 	background:none;
@@ -105,21 +110,50 @@ a:hover {
 
 	section {
 		padding-left:3em;
-
 	} 
  
-h1, h2, h3, h4, h5, h6, p, ul, ol, li, blockquote {
-		max-width: 25em;
+	h1, h2, h3, h4, h5, h6, p, ul, ol, li, blockquote {
+		max-width: 550px;
 	}
- 
-
-
 }
 
 
-@media screen and (min-width:950px) {
+@media screen and (min-width:1100px), (min-height:400px) and (orientation:landscape) {
 
-	
+	section {
+		padding: 0 5%;
+	}
+
+	.hidden>div{
+	    display:block;
+	}
+
+	.visible>div{
+	    display:block;
+	}
+}
+
+
+
+@media screen and (min-width:1100px) and (min-height:1000px) {
+
+	section {
+		padding: 0 20%;
+	}
+
+
+	section {
+		min-height:100%;
+		position:relative;
+	/* 	background: $base-color; */
+	} 
+}
+
+
+@media screen and (min-width:1600px) {
+	section {
+		padding: 0 25%;
+	}
 }
 
 
@@ -132,9 +166,6 @@ section {
 	padding:1.5em;
 	opacity: .8;
 } 
-
-
-
 
 
  */

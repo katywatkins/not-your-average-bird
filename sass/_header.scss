@@ -4,28 +4,13 @@
 	color: darken($base-color, 20);
 	font-size: 2em;
 	 text-shadow:  1px 1px 1px darken($base-color, 70);
-   /*      color: #9c8468;
+   /*   color: #9c8468;
         opacity: 0.5; */
     padding-top:none;
 }
 
 
-.arrow-down {
-	width: 0; 
-	height: 0; 
-	border-left: 20px solid transparent;
-	border-right: 20px solid transparent;
-	
-	border-top: 20px solid darken($base-color, 5);
-	margin: 0 auto;
-	background: $base-color;
-	position:absolute;
-	/* bottom: 0; */
-	 left:0;
-        right:0;
-        margin-left:auto;
-        margin-right:auto;
-}
+
 
 #main-title h1{
 	padding-top:1.5em;
@@ -40,7 +25,10 @@
 #big-title{
 	font-size: 2.1875em; /* 70 / 32 */
 	opacity: 1;
+}
 
+#title-sub p {
+	max-width:100%;
 }
 
 /* landscape mode on small screens can't have large margins on top, not enough space  */
@@ -51,20 +39,17 @@
 	}
 
 	#main-title h1{
-	padding-top:.5em !important;
+		padding-top:.5em !important;
 	}
 }
 
 
 @media screen and (min-width:331px) {
-
-	
-
 	#main-title {
 		padding-top: 8em;
 		margin:0;
 		padding-right:3em;
-		}
+	}
 
 	#main-title h1 {
 		line-height: 1.9em;
@@ -98,3 +83,43 @@
 	}
 
 }
+
+@media screen and (min-width:1100px), (min-height:400px) and (orientation:landscape) {
+	#main-title {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+}
+
+
+@media screen and (min-width:1100px), (min-height:800px) and (orientation:landscape) {
+	#main-title {
+		padding-left: 20%;
+		padding-right: 20%;
+	}
+}
+//messing with the divider - keep for later+-
+
+/*.
+
+<div class="arrow-down"></div>
+arrow-down {
+	height:30px;
+	width:30px;
+
+
+	
+ 	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	
+	border-top: 20px solid darken($base-color, 20); 
+	margin: 0 auto;
+	background: $base-color; 
+	position:absolute;
+	margin-top:9px;
+	 left:0;
+        right:0;
+        margin-left:auto;
+        margin-right:auto;
+    content:url(/bird.png);
+} */

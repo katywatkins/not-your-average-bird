@@ -1,10 +1,8 @@
-$teal: rgb(0, 166, 198); /* teal */
 $darkergreen: rgba(170, 189, 14, .2); /* darker green */
 $lightergreen: rgba(203,217,88, .7); /* lime green */
-$green:rgb(203,217,88); /* lime green */
  
-$base-color: $teal;
-$alt-color: $green;
+$base-color: rgb(0, 166, 198); /* teal */
+$alt-color: rgb(203,217,88); /* lime green */
 $background-color: #FFF;
 
 $link-color: lighten($alt-color, 15);
