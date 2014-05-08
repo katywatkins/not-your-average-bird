@@ -26,7 +26,7 @@ aside h1 {
 	margin: .5em 0;
 	text-decoration: underline;
  	display:inline;
- 	line-height:1.3em;
+ 	line-height:1em;
  	font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
  	font-size: 1.6em;
  	text-shadow:none;
@@ -35,7 +35,7 @@ aside h1 {
 
 
 aside h1:hover {
-	color:pink;
+	color:$link-color-aside-hover;
 
      transition: color .2s ease;
 }
