@@ -1,12 +1,13 @@
 html, body, #site {
 	/* min-width:10em; */
 	height:100%;
-	margin:0;
+	margin:0 auto;
 	font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 100%;
 	font-weight: 200;
 	-webkit-font-smoothing:antialiased;  /* and magically, text doesn't look bold in Chrome */
 	line-height:1.8em;
+	max-width:880px
 }
 
 p, li {
@@ -15,6 +16,7 @@ p, li {
 
 body {
 	background: url("/i/bg-2-2.png") fixed repeat;
+
 }
 
 #main-title, #summary {
@@ -131,6 +133,9 @@ a:hover {
 	.visible>div{
 	    display:block;
 	}
+	h1, h2, h3, h4, h5, h6, p, ul, ol, li, blockquote {
+		max-width: 650px;
+	}
 }
 
 
@@ -145,16 +150,17 @@ a:hover {
 	section {
 		min-height:100%;
 		position:relative;
+		/* max-width:600px; */
 	/* 	background: $base-color; */
 	} 
 }
 
-
+/* 
 @media screen and (min-width:1600px) {
 	section {
 		padding: 0 25%;
 	}
-}
+} */
 
 
 
