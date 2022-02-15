@@ -5,7 +5,7 @@ A small website (about penguins!) that started out as a learning opportunity for
 ## Requirements:
 - Node.js
 
-Run `node --version` in your terminal to check whether or not it's installed. If it returns something like `v14.5.0`, you're good to go.
+Run `node --version` in your terminal to check whether or not it's installed. If it returns something like `v16.13.0`, you're good to go.
 
 ## Running Locally
 Run the following commands in your terminal.
